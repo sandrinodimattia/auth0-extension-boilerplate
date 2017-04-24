@@ -38,6 +38,7 @@ app.get('/', function (req, res) {
 
 // This endpoint would be called by webtask-gallery to dicover your metadata
 app.get('/meta', function (req, res) {
+  console.log(JSON.stringify(req.webtaskContext, null, 2));
   res.status(200).send(metadata);
 });
 
