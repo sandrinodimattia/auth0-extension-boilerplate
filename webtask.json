@@ -9,5 +9,39 @@
   "keywords": [
     "auth0",
     "extension"
-  ]
+  ],
+  "secrets": {
+    "STRING_SETTING": {
+      "description": "This is a setting.",
+      "required": true
+    },
+    "PASSWORD_SETTING": {
+      "description": "This is a password setting.",
+      "required": false,
+      "type": "password"
+    },
+    "SELECT_SETTING": {
+      "description": "This is a select",
+      "type": "select",
+      "required": false,
+      "default": "false",
+      "allowMultiple": false,
+      "options": [
+        {
+          "value": "value1",
+          "text": "Value 1"
+        },
+        {
+          "value": "value2",
+          "text": "Value 2"
+        }
+      ]
+    },
+    "FILE_SETTING": {
+      "required": true,
+      "type": "file",
+      "allowedFileTypes":  ".json",
+      "base64Encoded": true
+    }
+  }
 }
