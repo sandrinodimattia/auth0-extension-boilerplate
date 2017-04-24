@@ -14,6 +14,13 @@
     "STRING_SETTING": {
       "description": "This is a setting.",
       "required": true
+    },
+    "FILE_SETTING": {
+      "required": true,
+      "type": "file",
+      "description": "This is a setting.",
+      "allowedFileTypes": ".json",
+      "base64Encoded": false
     }
   }
 }
