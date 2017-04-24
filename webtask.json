@@ -4,12 +4,18 @@
   "version": "1.0.0",
   "author": "auth0",
   "description": "This is a Hello World extension",
+  "useHashName": false,
   "type": "application",
-  "repository": "https://github.com/auth0/auth0-extension-boilerplate",
+  "initialUrlPath": "/admins/login",
+  "uninstallConfirmMessage": "Do you really want to uninstall this extension? Doing so will also remove the rule and the token endpoint.",
+  "repository": "https://github.com/sandrinodimattia/auth0-extension-boilerplate",
   "keywords": [
     "auth0",
     "extension"
   ],
+  "auth0": {
+    "createClient": true
+  },
   "secrets": {
     "STRING_SETTING": {
       "description": "This is a setting.",
