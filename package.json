@@ -14,8 +14,10 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "auth0-oauth2-express": "^1.1.10",
+    "auth0-oauth2-express": "0.0.3",
     "express": "4.14.0",
-    "webtask-tools": "1.2.0"
+    "webtask-bundle": "^3.0.1",
+    "webtask-tools": "1.2.0",
+    "wt-cli": "^6.0.0"
   }
 }

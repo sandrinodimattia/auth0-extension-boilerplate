@@ -1,12 +1,7 @@
 var express  = require('express');
-var auth0    = require('auth0-oauth2-express');
 var Webtask  = require('webtask-tools');
 var app      = express();
 var metadata = require('./webtask.json');
-
-app.use(auth0({
-  scopes: 'read:connections'
-}));
 
 app.get('/', function (req, res) {
   var view = [
