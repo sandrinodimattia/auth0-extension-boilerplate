@@ -4,49 +4,21 @@
   "version": "1.0.0",
   "author": "auth0",
   "description": "This is a Hello World extension",
-  "useHashName": false,
   "type": "application",
-  "initialUrlPath": "/admins/login",
-  "uninstallConfirmMessage": "Do you really want to uninstall this extension? Doing so will also remove the rule and the token endpoint.",
-  "repository": "https://github.com/sandrinodimattia/auth0-extension-boilerplate",
+  "repository": "https://github.com/auth0/auth0-extension-boilerplate",
   "keywords": [
     "auth0",
     "extension"
   ],
-  "auth0": {
-    "createClient": true
-  },
   "secrets": {
     "STRING_SETTING": {
       "description": "This is a setting.",
       "required": true
     },
-    "PASSWORD_SETTING": {
-      "description": "This is a password setting.",
-      "required": false,
-      "type": "password"
-    },
-    "SELECT_SETTING": {
-      "description": "This is a select",
-      "type": "select",
-      "required": false,
-      "default": "false",
-      "allowMultiple": false,
-      "options": [
-        {
-          "value": "value1",
-          "text": "Value 1"
-        },
-        {
-          "value": "value2",
-          "text": "Value 2"
-        }
-      ]
-    },
     "FILE_SETTING": {
       "required": true,
       "type": "file",
-      "allowedFileTypes":  ".json",
+      "allowedFileTypes": ".json",
       "base64Encoded": true
     }
   }
